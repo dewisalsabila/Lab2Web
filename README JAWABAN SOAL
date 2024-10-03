@@ -1,1 +1,31 @@
+1.Lakukan eksperimen dengan mengubah dan menambah properti dan nilai pada kode CSS dengan mengacu pada CSS Cheat Sheet yang diberikan terpisah dari modul ini.
+2. Apa perbedaan pedeklarasian CSS elemen h1 {...} dengan #intro {...}? berikan penjelasannya!
+~Perbedaan antara deklarasi CSS elemen h1 {...} dengan #intro h1 {...}:
+   - h1 {...} : Ini adalah selektor elemen yang akan mempengaruhi semua elemen h1 di halaman.
+   - #intro h1 {...} : Ini adalah selektor yang lebih spesifik. Hanya akan mempengaruhi elemen h1 yang berada di dalam elemen dengan id "intro".
+   - #intro h1 {...} memiliki spesifisitas yang lebih tinggi, sehingga akan menimpa aturan h1 {...} jika terjadi konflik.
+
+3. Apabila ada deklarasi CSS secara internal, lalu ditambah CSS ekternal dan inline CSS pada elemen yang sama. Deklarasi manakah yang akan ditampilkan pada browser?
+Berikan penjelasan dan contohnya!
+~Ketika menambahkan CSS internal ke elemen yang sama dengan deklarasi eksternal:
+   - CSS internal biasanya akan menimpa CSS eksternal karena memiliki prioritas yang lebih tinggi.
+   - Namun, ini tergantung pada spesifisitas selektor dan urutan pemuatan CSS.
+   - Contoh:
+     Eksternal: h1 { color: blue; }
+     Internal: <style>h1 { color: red; }</style>
+     Hasil: Teks h1 akan berwarna merah karena CSS internal menimpa CSS eksternal.
+
+4. Pada sebuah elemen HTML terdapat ID dan Class, apabila masing - masing selector tersebut terdapat delarasi CSS,
+maka deklarasi manakah yang akan di tampilkan pada browser? Berikan penjelasan dan contohnhya! 
+( <p id="paragraf-1" classs="text-paragraf">)
+Pada elemen HTML yang memiliki ID dan Class:
+   - Deklarasi CSS menggunakan ID akan memiliki prioritas lebih tinggi daripada deklarasi menggunakan Class.
+   - Contoh:
+     HTML: <div id="myDiv" class="myClass">Konten</div>
+     CSS:
+     css
+     #myDiv { color: red; }
+     .myClass { color: blue; }
+     
+     Hasil: Teks akan berwarna merah karena selektor ID memiliki prioritas lebih tinggi.
 
