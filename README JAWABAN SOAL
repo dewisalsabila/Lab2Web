@@ -1,4 +1,13 @@
 1.Lakukan eksperimen dengan mengubah dan menambah properti dan nilai pada kode CSS dengan mengacu pada CSS Cheat Sheet yang diberikan terpisah dari modul ini.
+~ mengubah latar belakang body 
+  - body {
+            font-family: 'Open Sans', sans-serif;
+            backround-color: black#000000;
+          }
+  - Hasil dari codingan di atas yaitu backround yang tadinya putih berubah jadi hitam
+~ menambahkan button 
+  - < a class="button btn-secondary"href="#">Back to Home</a>
+  - Maka hasil dalam tampilan di samping informasi selanjutnya yaitu back to home
 2. Apa perbedaan pedeklarasian CSS elemen h1 {...} dengan #intro {...}? berikan penjelasannya!
 ~Perbedaan antara deklarasi CSS elemen h1 {...} dengan #intro h1 {...}:
    - h1 {...} : Ini adalah selektor elemen yang akan mempengaruhi semua elemen h1 di halaman.
